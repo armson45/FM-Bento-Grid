@@ -66,11 +66,11 @@ main {
 
   & h1 {
     line-height: .9;
-    letter-spacing: -2px;
-    font-size: var(--fs-xl);
-    color: var(--white);
     font-weight: 500;
     text-wrap: balance;
+    color: var(--white);
+    letter-spacing: -2px;
+    font-size: var(--fs-xl);
   }
 
   & p {
@@ -308,6 +308,7 @@ main {
 
     .img {
       width: 140%;
+      margin-left: 5rem;
     }
 
     img {
@@ -315,6 +316,7 @@ main {
     }
 
     h2 {
+      margin-inline: 0;
       margin-top: 1rem;
       font-weight: 500;
       line-height: .8;
@@ -402,6 +404,8 @@ main {
   }
 
   .ai-content {
+    margin: 0;
+
     p {
       font-weight: 500;
       line-height: .9;
@@ -412,5 +416,11 @@ main {
     .ai-content__image {
       width: 250px;
     }
+  }
+}
+
+@media (width >= 81.25em) {
+  main {
+    max-width: 1400px;
   }
 }
