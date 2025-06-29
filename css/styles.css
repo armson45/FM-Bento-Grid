@@ -54,6 +54,15 @@ main {
   ;
 }
 
+.grid-container article {
+  view-timeline-name: --reveal;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+  animation-range: entry 15% cover 25%;
+
+}
+
 .highlight {
   color: var(--yellow-200);
 }
@@ -146,7 +155,6 @@ main {
 
   img {
     max-width: 225px;
-
   }
 }
 
